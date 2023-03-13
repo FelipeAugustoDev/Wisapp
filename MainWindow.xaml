@@ -4,17 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wisapp"
+        xmlns:userControls="clr-namespace:Wisapp.View.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="150" />
+            <RowDefinition Height="180" />
             <RowDefinition />
         </Grid.RowDefinitions>
+        
+        <userControls:MenuBar/>
     </Grid>
 </Window>

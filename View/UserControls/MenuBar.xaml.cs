@@ -13,18 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Wisapp
+namespace Wisapp.View.UserControls
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interação lógica para MenuBar.xam
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MenuBar : UserControl
     {
-        public MainWindow()
+        public MenuBar()
         {
             InitializeComponent();
         }
-
-
     }
 }
