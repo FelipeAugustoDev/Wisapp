@@ -10,6 +10,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF20B0FB" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="130"/>
@@ -27,7 +33,7 @@
         <userControls:MenuBar Grid.ColumnSpan="3"/>
 
         <Label FontSize="20" Margin="0,20,0,0" HorizontalAlignment="Center" 
-               Content="Seja Bem Vindo" Grid.Column="0" Grid.Row="1" />
+               Content="Seja Bem Vindo" Grid.Column="0" Grid.Row="1" Foreground="White"/>
         
         <Image Source="./Icons/Images/girl.png" Stretch="Fill"
                Grid.Column="0" Grid.Row="2" Width="200" Height="200" />

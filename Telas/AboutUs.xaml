@@ -9,7 +9,13 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AboutUs">
 
-    <Grid Background="White">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF20B0FB" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -28,13 +34,13 @@
 
             <Label Grid.Row="0" Content="Sobre nós" HorizontalAlignment="Center" FontSize="20" FontWeight="SemiBold"/>
             <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="316">
-                <TextBlock TextWrapping="Wrap" Height="auto" FontSize="15">
+                <TextBlock Foreground="White" TextWrapping="Wrap" Height="auto" FontSize="15">
                     Somos uma ONG sem fins lucrativos. Temos como objetivo,
                    Auxiliar no bem-estar mental de forma com que a pessoa se"
                     divirta e compartilhe suas experiencias com os usuarios"
                 </TextBlock>
             </StackPanel>
-            
+
 
 
         </Grid>
