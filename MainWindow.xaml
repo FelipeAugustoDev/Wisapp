@@ -8,12 +8,38 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="180" />
+            <RowDefinition Height="140" />
             <RowDefinition />
         </Grid.RowDefinitions>
         
-        <userControls:MenuBar/>
+        
+        
+        <userControls:MenuBar Grid.ColumnSpan="3"/>
+
+        <Label FontSize="20" Margin="0,20,0,0" HorizontalAlignment="Center" 
+               Content="Seja Bem Vindo" Grid.Column="0" Grid.Row="1" />
+        
+        <Image Source="./Icons/login-icon.png" Stretch="Fill"
+               Grid.Column="0" Grid.Row="2" Width="100" Height="100" />
+
+        <Grid Margin="0,30,0,0" Grid.Row="2" Grid.Column="2" Width="300" Height="200" Background="Black">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+        </Grid>
     </Grid>
 </Window>
