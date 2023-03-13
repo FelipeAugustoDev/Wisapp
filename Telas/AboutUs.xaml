@@ -19,7 +19,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <userControls:MenuBar Grid.ColumnSpan="2"/>
-        <Image Source="../Icons/Images/imagem1.gif"   Grid.Column="0" Grid.Row="2" Width="350"/>
+        <Image Source="../Icons/Images/boy.png"   Grid.Column="0" Grid.Row="2" Width="200"/>
         <Grid Grid.Row="2" Grid.Column="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
@@ -27,7 +27,7 @@
             </Grid.RowDefinitions>
 
             <Label Grid.Row="0" Content="Sobre nós" HorizontalAlignment="Center" FontSize="20" FontWeight="SemiBold"/>
-            <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="300">
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="316">
                 <TextBlock TextWrapping="Wrap" Height="auto" FontSize="15">
                     Somos uma ONG sem fins lucrativos. Temos como objetivo,
                    Auxiliar no bem-estar mental de forma com que a pessoa se"

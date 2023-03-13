@@ -29,8 +29,8 @@
         <Label FontSize="20" Margin="0,20,0,0" HorizontalAlignment="Center" 
                Content="Seja Bem Vindo" Grid.Column="0" Grid.Row="1" />
         
-        <Image Source="./Icons/login-icon.png" Stretch="Fill"
-               Grid.Column="0" Grid.Row="2" Width="100" Height="100" />
+        <Image Source="./Icons/Images/girl.png" Stretch="Fill"
+               Grid.Column="0" Grid.Row="2" Width="200" Height="200" />
 
         <userChat:UserChat Grid.Row="2" Grid.Column="2" />
         <Grid Grid.Row="1" Grid.Column="2">
