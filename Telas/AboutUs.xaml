@@ -1,0 +1,43 @@
+﻿<Page x:Class="Wisapp.Telas.AboutUs"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Wisapp.Telas"
+      xmlns:userControls="clr-namespace:Wisapp.View.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AboutUs">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <userControls:MenuBar Grid.ColumnSpan="2"/>
+        <Image Source="../Icons/Images/imagem1.gif"   Grid.Column="0" Grid.Row="2" Width="350"/>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Content="Sobre nós" HorizontalAlignment="Center" FontSize="20" FontWeight="SemiBold"/>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="300">
+                <TextBlock TextWrapping="Wrap" Height="auto" FontSize="15">
+                    Somos uma ONG sem fins lucrativos. Temos como objetivo,
+                   Auxiliar no bem-estar mental de forma com que a pessoa se"
+                    divirta e compartilhe suas experiencias com os usuarios"
+                </TextBlock>
+            </StackPanel>
+            
+
+
+        </Grid>
+
+    </Grid>
+</Page>

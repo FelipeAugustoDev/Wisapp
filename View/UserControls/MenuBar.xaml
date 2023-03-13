@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Wisapp.View.UserControls"
              mc:Ignorable="d" 
              Height="30" d:DesignWidth="800">
-    <Grid Background="WhiteSmoke">
+    <Grid Background="#343A40">
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="400px" />
             <!--Colocar a logotipo-->
@@ -22,13 +22,13 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Label Name="LogoType" FontSize="20px" Content="Wisapp" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="15,0,0,0" />
+        <Label Foreground="White" Name="LogoType" FontSize="20px" Content="Wisapp" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="15,0,0,0" />
         <StackPanel Margin="0,0,20,0" Grid.Column="1" VerticalAlignment="Center"  Orientation="Horizontal" HorizontalAlignment="Center" >
-            <Label Content="Home" Margin="30,0"/>
-            <Label Content="Feed"  />
-            <Label Content="Sobre Nós" Margin="30,0,0,0"/>
+            <Label Foreground="White" Content="Home" Margin="30,0"/>
+            <Label Foreground="White" Content="Feed"  />
+            <Label Foreground="White" Content="Sobre Nós" Margin="30,0,0,0"/>
         </StackPanel>
         <Image Source="../../Icons/login-icon.png" Stretch="Fill" Grid.Column="2" Grid.Row="0" Width="30"  />
-        <CheckBox VerticalAlignment="Center" Content="Modo noturno"  Grid.Column="3"/>
+        <CheckBox VerticalAlignment="Center" Content="NightMode"  Foreground="White" Grid.Column="3"/>
     </Grid>
 </UserControl>
