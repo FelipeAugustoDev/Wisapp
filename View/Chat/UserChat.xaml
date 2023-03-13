@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Wisapp.View.Chat"
              mc:Ignorable="d" 
              Height="250" d:DesignWidth="300">
-    <Grid Margin="0,30,0,0" Grid.Row="2" Grid.Column="2" Width="300" Height="200" Background="Black">
+    <Grid Margin="0,30,0,0" Grid.Row="2" Grid.Column="2" Width="300" Height="200" Background="Black" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
@@ -18,22 +18,32 @@
         </Grid.RowDefinitions>
 
         <Image Source="../../Icons/user1.png" Width="30" Grid.Row="3" HorizontalAlignment="Left" Margin="10,0,0,0"/>
-        <RichTextBox  Name="UserTextBox" Grid.Row="3" Width="200" Height="25"/>
-        <Button Name="BotaoEnviarMensagem" Grid.Row="3" Width="20" Height="25" HorizontalAlignment="Right" Margin="0,0,30,0" FontSize="9" Click="BotaoEnviarMensagem_Click">pup</Button>
+        
+        <Border CornerRadius="10,0,0,10" Background="White" Width="180" Height="25" Grid.Row="3" HorizontalAlignment="Center" >
+        <RichTextBox BorderThickness="0" Name="UserTextBox" Grid.Row="3" Width="180" Height="25" Background="Transparent"/>        
+        </Border >
+        <Button Name="BotaoEnviarMensagem" Background="LightBlue" BorderThickness="0" Grid.Row="3" Width="25" Height="25" HorizontalAlignment="Right" Margin="0,0,35,0" FontSize="9" Click="BotaoEnviarMensagem_Click">pup</Button>
 
         <Image Source="../../Icons/user2.png" Width="30" Grid.Row="2" HorizontalAlignment="Right" Margin="10,0,0,0"/>
-        <TextBlock TextWrapping="Wrap" Name="TxbFriend1" Background="White" Width="180" Height="25" Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,35,0">
+        <Border CornerRadius="5,15,5,15" Background="White" Width="180" Height="25" Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,35,0" >
+        <TextBlock  TextWrapping="Wrap" Name="TxbFriend1">
             <Label Content="Sim, é claro" />
         </TextBlock>
-
+        </Border>
+        
         <Image Source="../../Icons/user3.png" Width="30" Grid.Row="1" HorizontalAlignment="Left" Margin="0,0,0,0"/>
-        <TextBlock TextWrapping="Wrap" Name="TxbFriend2" Background="White" Width="180" Height="25" Grid.Row="1" HorizontalAlignment="Left" Margin="35,0,0,0">
+
+        <Border  CornerRadius="15,5,15,5" Background="White" Width="180" Height="25" Grid.Row="1" HorizontalAlignment="Left" Margin="35,0,0,0" >
+        <TextBlock TextWrapping="Wrap" Name="TxbFriend2">
             <Label Content="Acho uma ótima idéia" />
         </TextBlock>
-
+        </Border>
+        
         <Image Source="../../Icons/user4.png" Width="30" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,0,0"/>
-        <TextBlock TextWrapping="Wrap" Name="TxbFriend3" Background="White" Width="180" Height="25" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,35,0">
+        <Border CornerRadius="5,15,5,15" Background="White" Width="180" Height="25" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,35,0">
+        <TextBlock TextWrapping="Wrap" Name="TxbFriend3">
             <Label Content="Vamos tomar um café hoje?" />
         </TextBlock>
+        </Border>
     </Grid>
 </UserControl>
