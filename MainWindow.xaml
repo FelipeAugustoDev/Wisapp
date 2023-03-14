@@ -21,20 +21,20 @@
             <ColumnDefinition Width="130"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="140" />
             <RowDefinition />
         </Grid.RowDefinitions>
-        
-        
-        
+
+
+
         <userControls:MenuBar Grid.ColumnSpan="3"/>
 
         <Label FontSize="20" Margin="0,20,0,0" HorizontalAlignment="Center" 
                Content="Seja Bem Vindo" Grid.Column="0" Grid.Row="1" Foreground="White"/>
-        
+
         <Image Source="./Icons/Images/girl.png" Stretch="Fill"
                Grid.Column="0" Grid.Row="2" Width="200" Height="200" />
 
@@ -48,7 +48,7 @@
             <Image Source="./Icons/Images/imagem1.gif" Grid.RowSpan="2" Grid.Row="0" Grid.Column="2" Width="300" Height="auto" VerticalAlignment="Top"/>
 
             <Border Grid.Row="1" CornerRadius="15" Background="Gray" Width="150" Margin="0,0,0,5">
-                <Grid >
+                <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
@@ -59,17 +59,18 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <RadioButton Grid.Column="0"  Background="White" Width="15" Height="15" />
-                    <RadioButton Grid.Column="1"  Background="White" Width="15" Height="15"/>
-                    <RadioButton Grid.Column="2"  Background="White" Width="15" Height="15"/>
-                    <RadioButton Grid.Column="3"  Background="White" Width="15" Height="15"/>
-                    <RadioButton Grid.Column="4"  Background="White" Width="15" Height="15"/>
+                    <RadioButton Grid.Column="0"  Background="White" Width="20" Height="20" />
+                    <RadioButton Grid.Column="1"  Background="White" Width="20" Height="20"/>
+                    <RadioButton Grid.Column="2"  Background="White" Width="20" Height="20"/>
+                    <RadioButton Grid.Column="3"  Background="White" Width="20" Height="20"/>
+                    <RadioButton Grid.Column="4"  Background="White" Width="20" Height="20"/>
 
                 </Grid>
             </Border>
-            
+
 
         </Grid>
-    
+        
+
     </Grid>
 </Window>
